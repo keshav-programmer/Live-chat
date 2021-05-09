@@ -1,5 +1,10 @@
 <?php
     include_once('../services.d/functions.php');
+    $login_attempt = isset($_GET['login_attempt'])?$_GET['login_attempt']:'';
+    if($login_attempt == 'LOGIN_FAILED')
+        $err = 'style="display: block;"';
+    else
+        $err = '';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +23,7 @@
         <section class="form login">
             <header>Live Chat App</header>
             <form action="auth.php" method="POST">
-                <div class="error-txt">This is an error Message</div>
+                <div class="error-txt" <?php echo $err; ?>>The useremail or password is incorrect!</div>
                     <div class="field input">
                         <label>E-mail Address</label>
                         <input type="text" placeholder="Enter your email" name="email">
