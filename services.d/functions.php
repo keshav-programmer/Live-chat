@@ -1,6 +1,6 @@
 <?php
 
-    define("ROOT", "C:/xampp/htdocs/Live chat/");
+    define("ROOT", "C:/xampp/htdocs/Live-chat/");
 
     function import($dir){
         include(ROOT.$dir);
