@@ -33,12 +33,12 @@
                         <input type="password" placeholder="Enter your password" name="password">
                         <i class="fas fa-eye"></i>
                     </div>
+                 
                     <div class="field button">
                         <input type="submit" value="Sign In">
                     </div>
             </form>
-            <div class="link"><a href="../trouble-login/">Having Trouble while logging in?</a></div>
-            <div class="link">Not yet signed up? <a href="../signup/">Signup Now.</a></div>
+            <div class="link">Not yet signed up? <a href="signup.html">Signup Now.</a></div>
         </section>
     </div>
 

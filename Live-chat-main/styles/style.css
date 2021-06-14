@@ -333,10 +333,3 @@ form .name-details .field:last-child{
     cursor: pointer;
     border-radius: 0 5px 5px 0;
 }
-
-.goback{
-    cursor: pointer;
-}
-.goback:hover{
-    text-decoration: underline;
-}
