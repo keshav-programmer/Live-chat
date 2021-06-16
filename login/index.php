@@ -37,7 +37,8 @@
                         <input type="submit" value="Sign In">
                     </div>
             </form>
-            <div class="link"><a href="../trouble-login/">Having Trouble while logging in?</a></div>
+            <!-- <div class="link"><a href="../forget password/forgetPass.html">Forgot Password!</a></div> -->
+            <div class="link"><a href="../forget password/forgetPass.html">Having Trouble while logging in?</a></div>
             <div class="link">Not yet signed up? <a href="../signup/">Signup Now.</a></div>
         </section>
     </div>
