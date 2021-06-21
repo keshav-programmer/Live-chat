@@ -44,9 +44,10 @@ function startTimer(duration, display, activateID, message) {
     }, 1000);
 }
 
+var email_exists;
+
 // check if email exists
 function checkEmailExistence(emailID) {
-    // let email_exists;
     $.ajax({
         // async: false,
         url: "../services.d/check-email-existence.php",
@@ -56,7 +57,13 @@ function checkEmailExistence(emailID) {
         },
         dataType: "text",
         success: function (strMessage) {
-            $('#email-exist-result').text(strMessage);
+            update_email_exists(strMessage);
         },
     });
+    return email_exists;
+}
+
+function update_email_exists(data){
+    email_exists = data;
+    console.log(email_exists)
 }
