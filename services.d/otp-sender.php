@@ -66,9 +66,9 @@
         <p>Use the following one-time password(OTP) to sign-in to your Live-chat Account.</p><br>
     
        <center> <span id="otp"><b>'.$otp.'</b></span></center><br>
-       <p>(The OTP will be valid for the next 45 seconds)</p><p>If you didn\'t intiate this action or if you think you received this email by mistake, please contact</p><div id="Contact"><a href="#">xyz@gmail.com</a></div><br>
+       <p>(The OTP will be valid for the next 2 minutes)</p><p>If you didn\'t intiate this action or if you think you received this email by mistake, please contact</p><div id="Contact"><a href="https://mail.google.com/mail/u/0/?fs=1&to=live-chat-team@gmail.com&tf=cm">live-chat-team@gmail.com</a></div><br>
       <b> Regards</b>,<br>
-      <img src="https://github.com/keshav-programmer/Live-chat/blob/keshav-patch-2/otp%20mail/logo.png" id="logo"><br>
+      <a href="#"><img src="https://sazad.000webhostapp.com/imgcons/live-chat-logo.png" alt="Live Chat Team Logo" id="logo"></a><br>
        Live-Chat Team. 
         
     </body>

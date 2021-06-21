@@ -29,31 +29,33 @@ sendOTPbtn.click(function (e) {
   if (validateTextInput("#fname") && validateTextInput("#lname")) {
     if (validateEmail("#email")) {
         // console.log(emailCheckResult);
-        if (!true) {
-          $("#error1").hide();
-          // step1.style.display = "none";
-          // step2.style.display = "block";
-          // $("#entered-email").text($("#email").val());
-          // $.ajax({
-          //   url: "../services.d/otp-sender.php",
-          //   method: "post",
-          //   data: {
-          //     email: $("#email").val(),
-          //     fname: $("#fname").val(),
-          //   },
-          //   dataType: "text",
-          //   success: function (strMessage) {
-          //     validation_code = strMessage;
-          //     console.log(strMessage);
-          //   },
-          // });
-          // resetDurationStart();
-        } else {
-          $("#error1").html(
-            'The email address already exists! Try new or <a href="../login/">Login instead</a>'
-          );
-          $("#error1").show();
-        }
+        // var res = checkEmailExistence($('#email').val());
+        
+        // if ( res || alert(res) ) {
+          // $("#error1").hide();
+          step1.style.display = "none";
+          step2.style.display = "block";
+          $("#entered-email").text($("#email").val());
+          $.ajax({
+            url: "../services.d/otp-sender.php",
+            method: "post",
+            data: {
+              email: $("#email").val(),
+              fname: $("#fname").val(),
+            },
+            dataType: "text",
+            success: function (strMessage) {
+              validation_code = strMessage;
+              // console.log(strMessage);
+            },
+          });
+          resetDurationStart();
+        // } else {
+        //   $("#error1").html(
+        //     'The email address already exists! Try new or <a href="../login/">Login instead</a>'
+        //   );
+        //   $("#error1").show();
+        // }
 
     } else {
       $("#error1").text("Please enter a valid email ID");
