@@ -348,6 +348,33 @@ form .name-details .field:last-child{
 
 
 
+/* Account made successfull page */
+
+#check{
+    font-size: 150px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.wrapper #AccCre{
+    text-align: center;
+}
+.wrapper a .continueBtn{
+    margin-top: 25px;
+    padding-top: 7px;
+    height: 45px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    background: #111;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+
+
 @media only screen and (max-width: 400px){
       
     .wrapper{
@@ -382,3 +409,5 @@ form .name-details .field:last-child{
 
   
 }
+
+
