@@ -62,16 +62,16 @@
                     <div class="name-details">
                         <div class="field input">
                             <label for="fname">First Name</label>
-                            <input type="text" placeholder="First Name" id="fname">
+                            <input type="text" placeholder="First Name" id="fname" name="fname">
                         </div>
                         <div class="field input">
                             <label for="lname">Last Name</label>
-                            <input type="text" placeholder="Last Name" id="lname">
+                            <input type="text" placeholder="Last Name" id="lname" name="lname">
                         </div>
                     </div>
                     <div class="field input">
                         <label for="email">E-mail Address</label>
-                        <input type="email" placeholder="Enter your email" id="email">
+                        <input type="email" placeholder="Enter your email" id="email" name="email">
                         <span id="email-exist-result" style="display: block;"></span>
                     </div>
                     <div class="field button">
