@@ -19,5 +19,5 @@
         header("location: ../");
     }
     else
-        header("location: ./?login_attempt=LOGIN_FAILED")
+        header("location: ./?login_attempt=LOGIN_FAILED");
 ?>
